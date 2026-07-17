@@ -58,7 +58,7 @@ export function Media() {
           <div className="absolute inset-0 opacity-20">
             <div className="absolute top-0 left-0 w-full h-full" style={{ backgroundImage: 'radial-gradient(circle at 70% 30%, #4DD0E1 0%, transparent 60%)' }} />
           </div>
-          <div className="relative z-10 max-w-7xl mx-auto px-6 pt-28 pb-16">
+          <div className="relative z-10 max-w-7xl mx-auto px-6 pt-36 pb-16">
             <motion.div initial={{ opacity: 0, y: 40 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
               <span className="text-[#4DD0E1] text-sm font-bold tracking-[0.25em] uppercase">Gallery</span>
               <h1

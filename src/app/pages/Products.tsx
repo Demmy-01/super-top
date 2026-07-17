@@ -118,7 +118,7 @@ export function Products() {
             <div className="absolute top-0 right-0 w-96 h-96 rounded-full bg-[#4DD0E1] blur-3xl" />
             <div className="absolute bottom-0 left-0 w-72 h-72 rounded-full bg-[#1565C0] blur-3xl" />
           </div>
-          <div className="relative z-10 max-w-7xl mx-auto px-6 pt-28 pb-16 text-center">
+          <div className="relative z-10 max-w-7xl mx-auto px-6 pt-36 pb-16 text-center">
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}

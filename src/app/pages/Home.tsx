@@ -7,7 +7,7 @@ import { Pagination, Autoplay } from 'swiper/modules'
 import CountUp from 'react-countup'
 import {
   ArrowRight, Droplets, Shield, Award, Zap, Leaf, Star,
-  ChevronDown, CheckCircle2, Phone, MessageCircle
+  ChevronDown, CheckCircle2, Phone, MessageCircle, Brain, Heart, Sparkles
 } from 'lucide-react'
 import { WaterCanvas } from '../components/WaterCanvas'
 import waterSplashIi from '../../images/water_splash_ii.png'
@@ -15,6 +15,7 @@ import bigPack from '../../images/big_pack.png'
 import dispenser from '../../images/dispenser.png'
 import sachete from '../../images/sachete.png'
 import hydration from '../../images/hydration.png'
+import idea from '../../images/idea.png'
 import 'swiper/css'
 import 'swiper/css/pagination'
 
@@ -187,7 +188,7 @@ export function Home() {
             />
           </div>
 
-          <div className="max-w-7xl mx-auto px-6 pt-28 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-6 items-center relative z-10">
+          <div className="max-w-7xl mx-auto px-6 pt-36 pb-20 grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-6 items-center relative z-10">
             {/* Left: text */}
             <div>
               <motion.div
@@ -442,6 +443,73 @@ export function Home() {
           </div>
         </section>
 
+        {/* ═══ WHY DRINKING WATER IS IMPORTANT ═══ */}
+        <section className="bg-white py-24 lg:py-32">
+          <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+            
+            {/* Left: Info details */}
+            <motion.div {...fadeUp(0)}>
+              <span className="text-[#1565C0] text-sm font-bold tracking-[0.25em] uppercase">Vital Hydration</span>
+              <h2
+                className="text-4xl lg:text-5xl font-black text-[#0B1F35] mt-3 mb-6 leading-tight"
+                style={{ fontFamily: 'Manrope, sans-serif' }}
+              >
+                Why Drinking Water is Important
+              </h2>
+              <p className="text-[#0B1F35]/65 leading-relaxed mb-10 max-w-xl">
+                Water is not just a thirst quencher — it is the absolute foundation of human life and vitality. Over 60% of our body is composed of water, and keeping it topped up is key to daily wellness.
+              </p>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                {[
+                  {
+                    icon: Brain,
+                    title: "Cognitive Power",
+                    desc: "Even mild dehydration can impair memory, attention, and brain function."
+                  },
+                  {
+                    icon: Zap,
+                    title: "Physical Energy",
+                    desc: "Water fuels your muscles, prevents fatigue, and optimizes body performance."
+                  },
+                  {
+                    icon: Heart,
+                    title: "Joint & Heart Health",
+                    desc: "Keeps joints lubricated and helps regulate blood circulation and pressure."
+                  },
+                  {
+                    icon: Sparkles,
+                    title: "Skin Radiance",
+                    desc: "Promotes healthy, glowing skin by flushing out toxins and improving elasticity."
+                  }
+                ].map((item, i) => (
+                  <div key={item.title} className="flex gap-4">
+                    <div className="w-12 h-12 rounded-xl bg-[#EAF9FF] border border-[#1565C0]/15 flex items-center justify-center flex-shrink-0">
+                      <item.icon className="w-6 h-6 text-[#1565C0]" />
+                    </div>
+                    <div>
+                      <h4 className="text-[#0B1F35] font-bold text-base mb-1" style={{ fontFamily: 'Manrope, sans-serif' }}>
+                        {item.title}
+                      </h4>
+                      <p className="text-[#0B1F35]/60 text-xs leading-relaxed">{item.desc}</p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+
+            {/* Right: Illustration image */}
+            <motion.div {...fadeUp(0.15)} className="relative flex justify-center">
+              <img
+                src={idea}
+                alt="Importance of water representation"
+                className="max-h-[480px] w-full max-w-[480px] object-contain"
+              />
+            </motion.div>
+
+          </div>
+        </section>
+
         {/* ═══ PURIFICATION JOURNEY ═══ */}
         <section className="bg-[#0B1F35] py-24 lg:py-32">
           <div className="max-w-7xl mx-auto px-6">
@@ -469,7 +537,7 @@ export function Home() {
         <section className="bg-[#0a1929] py-24 lg:py-32">
           <div className="max-w-7xl mx-auto px-6">
             <motion.div {...fadeUp()} className="text-center mb-16">
-              <span className="text-[#4DD0E1] text-sm font-bold tracking-[0.25em] uppercase">Our Range</span>
+              <span className="text-[#4DD0E1] text-sm font-bold tracking-[0.25em] uppercase">Our Products</span>
               <h2
                 className="text-4xl lg:text-5xl font-black text-white mt-3"
                 style={{ fontFamily: 'Manrope, sans-serif' }}

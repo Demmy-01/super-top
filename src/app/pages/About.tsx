@@ -58,7 +58,7 @@ export function About() {
             }}
           />
           <div className="absolute inset-0 bg-gradient-to-b from-[#0B1F35]/80 via-[#003C8F]/60 to-[#0B1F35]" />
-          <div className="relative z-10 max-w-7xl mx-auto px-6 pt-28 pb-16">
+          <div className="relative z-10 max-w-7xl mx-auto px-6 pt-36 pb-16">
             <motion.div
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
