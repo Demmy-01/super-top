@@ -210,7 +210,7 @@ export function Home() {
                 className="text-6xl sm:text-7xl lg:text-8xl font-black leading-[1.0] mb-6"
                 style={{ fontFamily: 'Manrope, sans-serif' }}
               >
-                <span className="text-white">Pure</span>
+                <span className="text-white">Super Topp</span>
                 <br />
                 <span
                   style={{
@@ -219,12 +219,10 @@ export function Home() {
                     WebkitTextFillColor: 'transparent',
                   }}
                 >
-                  Water.
+                  Pure
                 </span>
                 <br />
-                <span className="text-white">Pure</span>
-                <br />
-                <span className="text-white/50">Life.</span>
+                <span className="text-white">Excellence.</span>
               </motion.h1>
 
               <motion.p
