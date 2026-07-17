@@ -91,7 +91,7 @@ export function About() {
               </div>
               <div className="absolute -bottom-6 -right-6 bg-[#0B1F35] text-white p-6 rounded-2xl shadow-2xl max-w-[220px] border border-[#4DD0E1]/20">
                 <div className="text-[#4DD0E1] text-xs font-bold tracking-widest uppercase mb-1">Founded</div>
-                <div className="text-3xl font-black" style={{ fontFamily: 'Manrope, sans-serif' }}>2015</div>
+                <div className="text-3xl font-black" style={{ fontFamily: 'Manrope, sans-serif' }}>2021</div>
                 <div className="text-white/50 text-xs mt-1">Akure, Nigeria</div>
               </div>
             </motion.div>

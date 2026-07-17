@@ -323,7 +323,7 @@ export function Contact() {
               <div className="rounded-3xl overflow-hidden border border-white/10 bg-[#0a1929] h-72 lg:h-96 flex items-center justify-center">
                 <iframe
                   title="SUPER TOPP Location"
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63820.87260625994!2d36.78048!3d-1.28333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x182f1172d84d49a7%3A0xf7cf0254b297924c!2sNairobi%2C%20Kenya!5e0!3m2!1sen!2ske!4v1700000000000"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d63168.88254032178!2d5.1477!3d7.2526!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x10438c5b2b4f9f4f%3A0x0!2sAkure%2C%20Ondo%20State%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1700000000000"
                   className="w-full h-full border-0"
                   allowFullScreen
                   loading="lazy"
