@@ -556,8 +556,8 @@ export function Home() {
                     className="rounded-3xl p-8 border border-white/8 bg-gradient-to-b from-white/5 to-transparent hover:border-[#4DD0E1]/30 transition-all duration-500 hover:bg-white/8 text-center"
                     style={{ animation: `float ${5 + i}s ease-in-out infinite`, animationDelay: `${i * 0.8}s` }}
                   >
-                    <div className="h-64 flex items-center justify-center mb-6">
-                      <div className="h-full w-full mx-auto flex items-center justify-center">
+                    <div className="h-64 flex items-center justify-center mb-6 rounded-2xl bg-white">
+                      <div className="h-full w-full mx-auto flex items-center justify-center p-4">
                         <img
                           src={p.image}
                           alt={p.label}
