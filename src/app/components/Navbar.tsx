@@ -29,10 +29,8 @@ export function Navbar() {
 
   return (
     <header
-      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
-        scrolled
-          ? 'bg-[#0B1F35]/85 backdrop-blur-2xl border-b border-white/8 py-3 shadow-lg shadow-black/20'
-          : 'bg-transparent py-6'
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 bg-white border-b border-slate-100 shadow-sm ${
+        scrolled ? 'py-2.5' : 'py-4'
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
@@ -53,8 +51,8 @@ export function Navbar() {
               to={link.to}
               end={link.end}
               className={({ isActive }) =>
-                `text-sm tracking-wide transition-colors duration-300 relative group ${
-                  isActive ? 'text-[#4DD0E1]' : 'text-white/65 hover:text-white'
+                `text-sm font-semibold tracking-wide transition-colors duration-300 relative group ${
+                  isActive ? 'text-[#1565C0]' : 'text-slate-600 hover:text-slate-900'
                 }`
               }
             >
@@ -62,7 +60,7 @@ export function Navbar() {
                 <>
                   {link.label}
                   <span
-                    className={`absolute -bottom-0.5 left-0 h-px bg-gradient-to-r from-[#4DD0E1] to-transparent transition-all duration-300 ${
+                    className={`absolute -bottom-0.5 left-0 h-px bg-gradient-to-r from-[#1565C0] to-transparent transition-all duration-300 ${
                       isActive ? 'w-full' : 'w-0 group-hover:w-full'
                     }`}
                   />
@@ -76,7 +74,7 @@ export function Navbar() {
         <div className="hidden md:flex items-center gap-3">
           <Link
             to="/products"
-            className="text-white/60 hover:text-[#4DD0E1] transition-colors duration-300 p-2"
+            className="text-slate-600 hover:text-[#1565C0] transition-colors duration-300 p-2"
             aria-label="View products"
           >
             <ShoppingCart className="w-5 h-5" />
@@ -94,7 +92,7 @@ export function Navbar() {
         {/* Mobile Button */}
         <button
           onClick={() => setOpen(v => !v)}
-          className="md:hidden text-white p-2 rounded-lg hover:bg-white/10 transition-colors"
+          className="md:hidden text-slate-800 p-2 rounded-lg hover:bg-slate-100 transition-colors"
           aria-label="Toggle menu"
         >
           {open ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -109,7 +107,7 @@ export function Navbar() {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -10 }}
             transition={{ duration: 0.25 }}
-            className="md:hidden absolute top-full left-0 right-0 bg-[#0B1F35]/96 backdrop-blur-2xl border-b border-white/10"
+            className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-slate-100 shadow-lg"
           >
             <div className="px-6 py-6 flex flex-col gap-1">
               {links.map((link, i) => (
@@ -124,10 +122,10 @@ export function Navbar() {
                     end={link.end}
                     onClick={() => setOpen(false)}
                     className={({ isActive }) =>
-                      `block py-3 px-4 rounded-xl text-base font-medium transition-all duration-200 ${
+                      `block py-3 px-4 rounded-xl text-base font-semibold transition-all duration-200 ${
                         isActive
-                          ? 'text-[#4DD0E1] bg-[#4DD0E1]/10'
-                          : 'text-white/70 hover:text-white hover:bg-white/5'
+                          ? 'text-[#1565C0] bg-[#1565C0]/5'
+                          : 'text-slate-600 hover:text-slate-900 hover:bg-slate-50'
                       }`
                     }
                   >
