@@ -195,11 +195,7 @@ export function Products() {
                           animationDelay: `${i * 0.3}s`,
                         }}
                       >
-                        <div
-                          className="absolute bottom-4 left-1/2 -translate-x-1/2 w-24 h-4 rounded-full blur-xl opacity-20"
-                          style={{ background: '#4DD0E1' }}
-                        />
-                        <div className="h-48 w-full flex items-center justify-center">
+                        <div className="h-48 w-full flex items-center justify-center rounded-2xl bg-white p-4">
                           <img
                             src={product.image}
                             alt={product.label}
