@@ -160,7 +160,7 @@ export function Home() {
   return (
     <>
       <Helmet>
-        <title>SUPER TOPP — Premium Purified Water</title>
+        <title>SUPER TOPP — purity for freshness</title>
         <meta name="description" content="Experience purity perfected. SUPER TOPP delivers scientifically filtered, mineral-balanced water for a healthier, more vibrant life." />
       </Helmet>
 
@@ -199,7 +199,7 @@ export function Home() {
               >
                 <div className="w-1.5 h-1.5 rounded-full bg-[#4DD0E1] animate-pulse" />
                 <span className="text-[#4DD0E1] text-xs font-semibold tracking-[0.2em] uppercase">
-                  Premium Purified Water
+                  Purity for Freshness
                 </span>
               </motion.div>
 
